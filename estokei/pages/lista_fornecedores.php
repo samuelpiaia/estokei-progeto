@@ -77,12 +77,12 @@
                             <td class="p-4">
                                 <div class="flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                                     <!-- Botão Editar -->
-                                    <button class="p-2 rounded-lg text-estokei-textMuted hover:text-estokei-accent hover:bg-estokei-accent/10 transition-colors" title="Editar Fornecedor">
+                                    <button onclick="location.href='index.php?page=atualizar_fornecedor.php&id=<?php echo $fornecedor['id'] ?>'" class="p-2 rounded-lg text-estokei-textMuted hover:text-estokei-accent hover:bg-estokei-accent/10 transition-colors" title="Editar Fornecedor" >
                                         <i class="ph ph-pencil-simple text-lg"></i>
                                     </button>
                                     
                                     <!-- Botão Excluir -->
-                                    <button class="p-2 rounded-lg text-estokei-textMuted hover:text-estokei-danger hover:bg-estokei-danger/10 transition-colors" title="Excluir Fornecedor" onclick="return confirm('Tem certeza que deseja excluir o fornecedor <?php echo htmlspecialchars($fornecedor['nome']); ?>?');">
+                                    <button onclick="location.href='api/delete.php?table=fornecedores&id=<?php echo $fornecedor['id']; ?>'" class="p-2 rounded-lg text-estokei-textMuted hover:text-estokei-danger hover:bg-estokei-danger/10 transition-colors" title="Excluir Fornecedor" onclick="return confirm('Tem certeza que deseja excluir o fornecedor <?php echo htmlspecialchars($fornecedor['nome']); ?>?');">
                                         <i class="ph ph-trash text-lg"></i>
                                     </button>
                                 </div>

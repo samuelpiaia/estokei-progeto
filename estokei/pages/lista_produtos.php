@@ -124,7 +124,7 @@
                                         <i class="ph ph-pencil-simple text-lg"></i>
                                     </button>
                                     
-                                    <button class="p-2 rounded-lg text-estokei-textMuted hover:text-estokei-danger hover:bg-estokei-danger/10 transition-colors" title="Excluir Produto" onclick="return confirm('Tem certeza que deseja excluir o produto <?php echo htmlspecialchars($produto['nome']); ?>?');">
+                                    <button onclick="location.href='api/delete.php?table=produtos&id=<?php echo $produto['id']; ?>'"  class="p-2 rounded-lg text-estokei-textMuted hover:text-estokei-danger hover:bg-estokei-danger/10 transition-colors" title="Excluir Produto" onclick="return confirm('Tem certeza que deseja excluir o produto <?php echo htmlspecialchars($produto['nome']); ?>?');">
                                         <i class="ph ph-trash text-lg"></i>
                                     </button>
                                 </div>

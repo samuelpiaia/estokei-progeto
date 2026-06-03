@@ -102,7 +102,7 @@
                                     </button>
                                     
                                     <!-- Botão Excluir -->
-                                    <button class="p-2 rounded-lg text-estokei-textMuted hover:text-estokei-danger hover:bg-estokei-danger/10 transition-colors" title="Excluir" onclick="return confirm('Tem certeza que deseja excluir o usuário <?php echo htmlspecialchars($usuario['nome']); ?>?');">
+                                    <button onclick="location.href='api/delete.php?table=usuarios&id=<?php echo $usuario['id']; ?>'" class="p-2 rounded-lg text-estokei-textMuted hover:text-estokei-danger hover:bg-estokei-danger/10 transition-colors" title="Excluir" onclick="return confirm('Tem certeza que deseja excluir o usuário <?php echo htmlspecialchars($usuario['nome']); ?>?');">
                                         <i class="ph ph-trash text-lg"></i>
                                     </button>
                                 </div>
