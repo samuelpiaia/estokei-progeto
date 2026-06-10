@@ -36,7 +36,7 @@
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
                         <input 
-                            value="<?php echo $usuario['nome']; ?>"
+                            value="<?php echo $usuario['codigo_barras']; ?>"
                             type="number" 
                             id="codigo_barras" 
                             name="codigo_barras" 
@@ -52,6 +52,7 @@
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
                         <input 
+                            value="<?php echo $usuario['nome']; ?>"
                             type="text" 
                             id="nome" 
                             name="nome" 
@@ -66,7 +67,8 @@
                     <label for="nome" class="block text-xs font-semibold text-estokei-textMuted uppercase tracking-wider mb-2">descricao</label>
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
-                        <input 
+                        <input
+                        value="<?php echo $usuario['']; ?>" 
                             type="text" 
                             id="descricao" 
                             name="descricao" 
@@ -82,6 +84,7 @@
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
                         <input 
+                            value="<?php echo $usuario['']; ?>"
                             type="number" 
                             id="quatidade_atual" 
                             name="quatidade_atual" 
@@ -97,6 +100,7 @@
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
                         <input 
+                            value="<?php echo $usuario['']; ?>"
                             type="number" 
                             id="estoque_minimo" 
                             name="estoque_minimo" 
@@ -112,6 +116,7 @@
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
                         <input 
+                            value="<?php echo $usuario['']; ?>"
                             type="number" 
                             id="preco_custo" 
                             name="preco_custo" 
@@ -127,6 +132,7 @@
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
                         <input 
+                            value="<?php echo $usuario['']; ?>"
                             type="number" 
                             id="preco_venda" 
                             name="preco_venda" 
@@ -142,6 +148,7 @@
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
                         <input 
+                            value="<?php echo $usuario['']; ?>"
                             type="text" 
                             id="localizacao" 
                             name="localizacao" 
@@ -156,6 +163,7 @@
                     <div class="relative group">
                         <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-estokei-textMuted group-focus-within:text-estokei-accent transition-colors"></i>
                         <input 
+                            value="<?php echo $usuario['sku']; ?>"
                             type="text" 
                             id="sku" 
                             name="sku" 
